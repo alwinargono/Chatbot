@@ -13,7 +13,11 @@ def sms_reply():
     # Fetch the message
     msg = request.form.get('Body')
 
-    # Create reply
+    if msg == "hello":
+        # Create reply
+        resp = MessagingResponse()
+        resp.message("Hello back from the other side")
+    
     resp = MessagingResponse()
     resp.message("{}".format(msg))
 
