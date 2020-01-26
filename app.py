@@ -11,15 +11,13 @@ def hello():
 def sms_reply():
     """Respond to incoming calls with a simple text message."""
     # Fetch the message
-    msg = request.form.get('Body')
-
-    if msg == "hello":
-        # Create reply
-        resp = MessagingResponse()
-        resp.message("Hello back from the other side")
-    
+    msg = request.form.get('Body').lower()
     resp = MessagingResponse()
-    resp.message("{}".format(msg))
+    resp.message("Help to get code of the bots!")
+
+    if "hello" in msg:
+        # Create reply
+        resp.message("Hello back from the other side")
 
     return str(resp)
 
