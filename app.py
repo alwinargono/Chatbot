@@ -36,12 +36,23 @@ def sms_reply():
     resp = MessagingResponse()
 
     if "hi" in msg or "hello" in msg:
-        resp.message("Greetings Human! I am a weather bot!                                                                             To get the weather of a current city type in \"weather in cityname\"")
+        resp.message("Greetings Human! I am a weather bot!                                                                             To get the weather of a current city type in \"weather celcius/farenheit in cityname\"")
 
-    if "weather" in msg:
+    if "weather" in msg and "celcius" in msg:
         string1 = msg
         cty = string1.split("in ",1)[1]
-        resp.message(getweather(cty) + " Celcius")
+        resp.message("it's "+ getweather(cty) + " Celcius in " +cty)
+    
+    elif "weather" in msg and "farenheit" in msg:
+        string1 = msg
+        cty = string1.split("in ",1)[1]
+        number = getweather(cty)
+        infarenheit = (number * 9/5) + 32
+        resp.message("it's "+ infarenheit + " Farenheit in " +cty)
+    else:
+        resp.message("Please Try again!")
+
+
 
 
     return str(resp)
