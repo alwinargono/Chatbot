@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "weather-tyaska",
+  "private_key_id": "1e507c042f35f36f2572dd575d76fbd5f2b35c4a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDHh4/YfAV/KFJw\nUZvJoETLJh+10L1wEqGbJ6/oHydUtDzQ9ryeif0kxfIu5OwxI1wj0rJKEZs/3/sL\n4WdpmW2829dQe6iqhjPGhDphhy+XmcfH8QvOqOLbbH491ws37cK948T3cHecjB1p\nuR+1dl3fXaS5/3oAPPjGDmOHGWdfFcFye5l6V9xBhmwUPzbUAiALh0q2MCd7UUk0\n0SLm47Ir9J1Mi3TZ/mZVW2wxABUAji8GSG3WXT34FNqSAVrjZMz6mWBL16WEnGXC\n/9FG8suR9uA7zB2EJ4dkca8SFm5VY7JDhkb99Rh3i0MjUIPYocA99S/8ddT+bX5b\nG2//MBOpAgMBAAECggEADakawH9TOq62dYanfsEoh0ERBuK89DVDrQqlTjmDI5c4\nb7UThQYyV5LEKeZAmSelhAqwQVvIZYc5RJ8LdGJ4WH0JAN4KgOxHE1u+XyrWfQ+0\nABzLymZr1l/XRSFvMkZ8C1dSsanYopZBiu63/KBB5+GdKM0p25DRFnGUlQK4qKeG\nmi54DuEoCNgF5U4s8k4QOOYuG7pAdnBqq/q+KY51yjyuNmNA6EnMFEi3svMX3Rsd\njy8DwPgcddfKjAjarrzYiuS6Iu8HyvShwOUTp2NB6/lGuFT9x0bk+NKlGO00h11V\nbce5TjSD5NOBZ1QM6BU0x5WyHsaJ5H1Iz0AWefWoFQKBgQD8kGC8ZkE279k8teAH\ntBXWbVJBqc/x2YleWYN0HhIBlTQD9GaQ24B2hAjeZOboPX2v1uw246UF0T3B4jNj\nbQ28uAq6jz37ZnmF6BLqKKJDcDoDzvVgArGAYXtaEM7OlxhmOshmdvt2diJ5BxVS\n1ZjonvnEkJXDths+35ZLdSBgRQKBgQDKPnowPVwvqZ+GmJ2sV447Md2gg9ecCgRy\nOZsICzgXxUvkP6LiTJG5LG+voq3NvXqg1vpoRdxhv0zMFOWgknYzDfOb3w+yqs8e\n0Ee1G3A46FWHTrnCd+sUf1SItijP7UbuChfB2GhC2hl+eEqtjNC8m6aLMDJIidfl\nXzx9U/1WFQKBgQCCP9sDjiB3un3n50vf7SmN6dcP8glBipRjSfqW+aMDmfS3TWVP\ns0Ou2yzPtG24u22EL2ymagQC2gPlZ0hlMCpzdt5hk9m9Ov3U5vhKNiZobQoeSK8W\nko0DzkIVErH0rMtyfUI4RYgtcYMZs2N10p4G6WWZz47M3a9zX09dHsxRmQKBgBQj\nkItJMOrWGzqN6/WDanheiNE5D7lMDhFJxzRP2bAUR3BdHd0m/sPPtvdoXaJFIfbu\nMVU8z6s0H3ObCRqqOvbuhrmYxrll5OYOm3VfXBdum0W0Ay9oPZJ283YBnaLG3+9I\nNgFpiUhO64b6d4U8pnSBk1382KT8hPEkQKPCP1HZAoGAPhZkj45XdeOljoPC2kv8\nGqlazhG/g4XLMLNiRFgzgShOvAkSmFe9Q4XsdPO6ZOWOUeZMmvCc96fcM+0gkxz4\n5atj375iB+41PJZvqxZksnI0e7LxckKyXKgrPwR22CmMUVYJ5duqrKCzYUdUzGoB\ndeAmtCGqKYHG+nv9r6U1S3g=\n-----END PRIVATE KEY-----\n",
+  "client_email": "weather@weather-tyaska.iam.gserviceaccount.com",
+  "client_id": "112833998090648289556",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/weather%40weather-tyaska.iam.gserviceaccount.com"
+}

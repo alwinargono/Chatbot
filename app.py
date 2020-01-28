@@ -1,11 +1,32 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
+from utils import fetch_reply
+import json, requests
+import time
+
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
     return "Hello, World!"
+
+def getweather(city):
+    api_key = "7298d140cd7a01576caac3c583586bb1"
+    base_url = "http://api.openweathermap.org/data/2.5/weather?"
+    city_name = city
+    complete_url = base_url + "appid=" + api_key + "&q=" + city_name 
+    response = requests.get(complete_url) 
+    x = response.json() 
+    if x["cod"] != "404": 
+        y = x["main"] 
+        current_temperature = y["temp"] 
+        temp = current_temperature - 273.15
+        disp_temp = int(temp)
+        return str(disp_temp)
+    else:
+        disp_temp = "city not found"
+  
 
 @app.route("/sms", methods=['POST'])
 def sms_reply():
@@ -13,11 +34,15 @@ def sms_reply():
     # Fetch the message
     msg = request.form.get('Body').lower()
     resp = MessagingResponse()
-    resp.message("Help to get code of the bots!")
 
-    if "hello" in msg:
-        # Create reply
-        resp.message("Hello back from the other side")
+    if "hi" in msg or "hello" in msg:
+        resp.message("Greetings Human! I am a weather bot!                                                                             To get the weather of a current city type in \"weather in cityname\"")
+
+    if "weather" in msg:
+        string1 = msg
+        cty = string1.split("in ",1)[1]
+        resp.message(getweather(cty) + " Celcius")
+
 
     return str(resp)
 
